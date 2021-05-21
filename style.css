@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#header{
+    height: 100vh;
+    background-image:url(images/2650401.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.containers{
+    margin-right:100px;
+    margin-left: 100px;
+}
+.container{
+        max-width: 1300px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+}
+.commonbtn{
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #5a0303;
+    font-weight:bold;
+    cursor: pointer;
+    border-radius: 20px;
+    color: rgb(160, 22, 22);
+    font-size: 18px;
+}
+.commonbtn:hover {
+    color: rgb(160, 22, 22);
+    border: 4px solid #5a0303;
+}
+.common-btn{
+    padding: 18px 40px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #ffffff;
+    font-weight:bold;
+    cursor: pointer;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.common-btn:hover {
+    color: rgb(255, 255, 255);
+    border: 4px solid #ffffff;
+}
+.header-text{
+    max-width: 500px;
+    margin-top: 100px;
+}
+h1{
+    font-size: 50px;
+    color: rgb(25, 27, 0);
+ 
+}
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #ffffff;
+    margin: 15px 0;
+}
+.navbar{
+    
+    align-items: center;
+    padding: 18px 0px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 18px 0px;
+ 
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+}
+a:hover {
+    color: cornsilk;
+  }
+.header-text p{
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.menu-icon{
+    width: 38px;
+    margin-left: 240px;
+    display: none;
+    position: fixed;
+
+
+}
+
+/*----------------about us----------------------*/
+
+
+#about{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-left-col{
+    flex-basis: 50%;
+}
+.about-left-col img{
+    width: 100%;
+}
+.about-right-col{
+    flex-basis: 50%;
+    text-align: center;
+}
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+
+}
+.about-text h1{
+    color: rgb(53, 53, 175);
+}
+.about-text h2{
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+
+}
+.about-text h4{
+   
+    font-size: 30px;
+    font-style: italic;
+    color: #777;
+    
+}
+.about-text p{
+    color: black;
+}
+.line1
+{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #19065e;
+    margin: 15px 0;
+}
+
+/*----------courses---------*/
+
+.small-container{
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: rgba(104, 41, 84, 0.8);
+}
+.title::after{
+    content: '';
+    background: pink;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-4 p{
+    color: black;
+    font-size: 20px;
+
+}
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+
+}
+.col-4 img{
+    width: 100%;
+    cursor: pointer;
+
+}
+.col-4:hover{
+    transform: translateY(-5px);
+    color: teal;
+  
+}
+/*-----------instructors-----------------------------*/
+
+.col-3 p{
+    color: black;
+    text-align: center;
+    width: 250px;
+    height: 15px;
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(146, 55, 146);
+}
+#Instructors {
+    padding-top: 100px;
+}
+#Instructors .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+#Instructors .col-3 img{
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+#Instructors .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: pink;
+}
+#Instructors .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+.bt{
+    text-align: center;
+}
+
+/*----------contact&login-------------*/
+
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col,.contact-right-col{
+    flex-basis: 50%;
+}
+.contact-right-col img{
+    width: 100%;
+}
+form{
+    max-width: 350px;
+    margin: 30px 0;
+}
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #4d6ab9;
+}
+
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+.contact-left-col h1{
+    color: black;
+
+}
+#footer{
+    background: black;
+}
+.copyright{
+    text-align: center;
+    color: white;
+}
+
+/*--------------social-icons----------*/
+
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+
+/*------------media query for menu--------------*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: linear-gradient(rgb(50, 47, 190),rgb(133, 27, 106));
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 3;
+
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+     
+    }
+    .header-text p{
+        color: rgb(255, 255, 255);
+        font-weight: 50;
+        font-size: 12px;
+    }
+    h1{
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+     
+    }
+    .common-btn{
+        padding: 10px 20px;
+        background: transparent;
+        outline: none;
+        border: 2px solid #ffffff;
+        font-weight:bold;
+        cursor: pointer;
+        border-radius: 20px;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+    }
+    
+}
+
+/*------media query for less than 600 screen size------*/
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3,.col-4,.col-6{
+        flex-basis: 100%;
+    }
+}
